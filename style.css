@@ -1,0 +1,109 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0; padding: 0;
+    text-align: center;
+    height: 100vh;
+}
+
+#botao-chatbot{
+    background-color: rgb(34, 255, 34);
+    border: 1px solid rgb(2, 155, 2);
+    border-radius: 20px;
+    padding: 10px; margin: 20vh auto;
+    width: max-content;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+#botao-chatbot:hover{
+    background-color: rgb(35, 223, 35);
+    cursor: pointer;
+}
+
+#chatbot-caixa{
+    position: fixed;
+    overflow: auto;
+    bottom: -500px; 
+    right: 0;
+    width: 350px; height: auto;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+    transition: 1s ease-in-out;
+}
+
+#caixa-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightcoral;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+}
+
+#close{
+    background-color: transparent;
+    border: 0;
+    text-transform: uppercase;
+    transition: 1s ease;
+}
+
+#close:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#caixa-corpo{
+    overflow: auto;
+    max-height: 400px; min-height: 300px;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.fala-bot{
+    margin: 5px; padding: 10px;
+    font-size: 14px;
+    text-align: left;
+    width: max-content;
+    max-width: 250px;
+    background-color: lightgray;
+    border-radius: 0px 10px 10px 10px;
+    transition: 1s ease;
+}
+
+.fala-user{
+    margin: 5px 5px 5px auto; padding: 10px;
+    font-size: 14px;
+    text-align: left;
+    width: max-content;
+    color: white;
+    background-color: #3d4ee9;
+    border-radius: 10px 0px 10px 10px;
+    transition: 1s ease;
+}
+
+#envio{
+    display: flex;
+    justify-content: space-between;
+}
+
+#msg{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #919191;
+    border-right: 0;
+}
+
+#enviar{
+    height: 33.5px;
+    border: 1px solid #919191;
+    border-left: 0;
+
+}
+
+#enviar:hover{
+    cursor: pointer;
+}

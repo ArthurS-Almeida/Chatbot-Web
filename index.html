@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exemplo de ChatBot - WEB</title>
+</head>
+<body>
+    <h1>ChatBot com JavaScript</h1>
+    <button id="botao-chatbot" onclick="ativar()">Tire sua dúvida aqui!</button> <!-- Botão para ativar o chatbot -->
+
+    <div id="chatbot-caixa"> <!-- Caixa de bate papo com o ChatBot-->
+        <header id="caixa-cabecalho"> <!-- Nome e opção de fechar o CHAT-->
+            <p style="width: max-content; margin: 0;">CHATBOT</p>
+            <button id="close" onclick="desativar()">x</button>
+        </header>
+        <main id="caixa-corpo"> <!-- Aba de conversa com o BOT-->
+            <p class="fala-bot">Olá, digite a opção que deseja falar: <br><br>
+                1. Sobre nós. <br>
+                2. Como funciona?<br>
+                3. Como posso fazer parte? <br>
+                4. Falar com atendente.
+            </p>
+        </main>
+        <footer id="envio">
+            <input type="text" name="msg" id="msg" placeholder="Digite sua mensagem..."> 
+            <button id="enviar" onclick="enviarmsg()">Enviar</button>
+        </footer>
+    </div>
+    <script src="js/enviodemensagem.js"></script>
+    <script src="js/ativacaodobot.js"></script>
+</body>
+</html>
